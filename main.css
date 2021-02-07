@@ -1,0 +1,89 @@
+* {
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+input[type="button"]{
+	background-color: darkcyan;
+	color: cyan;
+	border: none;
+	padding: 1rem 2rem;
+	border-radius: 5px;
+}
+
+input[type="button"]:hover{
+	color: darkcyan;
+	background-color: cyan;
+	cursor: pointer;
+}
+
+.main {
+	background-color: rgba(0,0,0, 0.2);
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	animation-name: fades;
+	animation-duration: 5s;
+}
+
+/*.main {
+	display: none;
+}*/
+
+
+
+.section-one {
+	width: 400px;
+	height: 400px;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 15px;
+	box-shadow: 0 10px 10px 0 rgba(0,0,0, 0.4);
+	position: relative;
+}
+
+.section-two {
+	background-color: darkcyan;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 15px;
+	border-radius: 10px 10px 0 0;
+	color: #fff;
+}
+
+.close-button {
+	float: right;
+	color: #ccc;
+	font-size: 20px;
+	transition: transform ease 0.25s ;
+}
+
+.close-button:hover {
+	color: #fff;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+.section-one p:nth-child(2){
+	margin-top: 150px;
+	color: darkcyan;
+	font-style: italic;
+}
+
+@keyframes fades{
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
